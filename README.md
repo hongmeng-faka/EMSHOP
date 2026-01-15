@@ -63,12 +63,6 @@ Curl PHP Extension
 安装使用
 下载源码
 上传到网站根目录
-配置 Nginx 伪静态规则
-location / {
-    index index.php index.html;
-    if (!-e $request_filename){
-        rewrite ^/(.*)$ /index.php last;
-    }
-}
+配置 Nginx 伪静态规则：thinkphp
 访问网站域名,根据安装向导完成配置
 登录后台开始使用
